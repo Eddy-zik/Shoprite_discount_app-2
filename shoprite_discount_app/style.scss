@@ -1,0 +1,67 @@
+/***
+    The new CSS reset - version 1.7.3 (last updated 7.8.2022)
+    GitHub page: https://github.com/elad2412/the-new-css-reset
+***/
+
+/*
+    Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property
+    - The "symbol *" part is to solve Firefox SVG sprite bug
+ */
+ *:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
+    all: unset;
+    display: revert;
+}
+
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+    box-sizing :border-box;
+}
+
+/* Reapply the pointer cursor for anchor tags */
+a, button {
+    cursor: revert;
+}
+
+/* Remove list styles (bullets/numbers) */
+ol, ul, menu {
+    list-style: none;
+}
+
+/* For images to not be able to exceed their container */
+img {
+    max-width: 100%;
+}
+
+
+// Your stylings should start here......
+*{
+    background-color:white;
+
+}
+main{
+    font-size: 120px;
+   border: 1px solid white ; 
+   /* padding: 100px 100px 50px; */
+   margin: 100px 300px 100px 300px ;
+   color:rgb(252, 36, 36);
+   text-align: center;
+   background-color:red  ;
+}
+button{
+      color: greenyellow;
+      background-color: rgb(252, 159, 21);
+      border: none;
+      font-size: 30px;
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+span{
+     color: rgb(5, 177, 5);
+     font-size: 80px;
+     background-color:red :
+}
+p{
+    color: rgb(163, 10, 10) ;
+    background-color:white;
+}
